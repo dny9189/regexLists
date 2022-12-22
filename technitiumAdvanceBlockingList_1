@@ -1,0 +1,89 @@
+{
+  "enableBlocking": true,
+  "blockListUrlUpdateIntervalHours": 12,
+  "networkGroupMap": {
+    "192.168.10.20": "kids",
+    "0.0.0.0/0": "everyone"
+  },
+  "groups": [
+    {
+      "name": "everyone",
+      "enableBlocking": true,
+      "allowTxtBlockingReport": true,
+      "blockAsNxDomain": false,
+      "blockingAddresses": [
+        "0.0.0.0",
+        "::"
+      ],
+      "allowed": [],
+      "blocked": [
+        "example.com"
+      ],
+      "allowListUrls": [],
+      "blockListUrls": [
+               "https://adaway.org/hosts.txt",
+"https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/hosts.txt"
+      ],
+      "allowedRegex": [],
+      "blockedRegex": [
+        "^ads\\.",
+        "(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]",
+        "(.+[_.-])?telemetry[_.-]",
+        "adim(age|g)s?[0-9]*[_.-]",
+        "adtrack(er|ing)?[0-9]*[_.-]",
+        "advert(s|is(ing|ements?))?[0-9]*[_.-]",
+        "aff(iliat(es?|ion))?[_.-]",
+        "analytics?[_.-]",
+        "banners?[_.-]",
+        "beacons?[0-9]*[_.-]",
+        "count(ers?)?[0-9]*[_.-]:"
+      ],
+      "regexAllowListUrls": [],
+      "regexBlockListUrls": [],
+      "adblockListUrls": [
+"https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
+"https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt",
+"https://github.com/AdguardTeam/AdguardFilters/blob/master/BaseFilter/sections/adservers_firstparty.txt",
+"https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt",
+]
+    },
+    {
+      "name": "kids",
+      "enableBlocking": true,
+      "allowTxtBlockingReport": true,
+      "blockAsNxDomain": false,
+      "blockingAddresses": [
+        "0.0.0.0",
+        "::"
+      ],
+      "allowed": [],
+      "blocked": [],
+      "allowListUrls": [],
+      "blockListUrls": [
+"https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/hosts.txt"
+      ],
+      "allowedRegex": [],
+      "blockedRegex": [
+        "^ads\\.",
+        "(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]",
+        "(.+[_.-])?telemetry[_.-]",
+        "adim(age|g)s?[0-9]*[_.-]",
+        "adtrack(er|ing)?[0-9]*[_.-]",
+        "advert(s|is(ing|ements?))?[0-9]*[_.-]",
+        "aff(iliat(es?|ion))?[_.-]",
+        "analytics?[_.-]",
+        "banners?[_.-]",
+        "beacons?[0-9]*[_.-]",
+        "count(ers?)?[0-9]*[_.-]:"
+],
+      "regexAllowListUrls": [],
+      "regexBlockListUrls": [],
+      "adblockListUrls": [
+"https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
+"https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt",
+"https://github.com/AdguardTeam/AdguardFilters/blob/master/BaseFilter/sections/adservers_firstparty.txt",
+"https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt"
+]
+    }
+  ]
+}
