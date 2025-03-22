@@ -1,0 +1,6 @@
+^(.*\.)?(doubleclick|googleadservices|googlesyndication)\.com$
+#General Adblocking
+^(.*\.)?(malware|phishing|scam|spam)\.[a-z]{2,}$
+#General Malware
+^(.*\.)?(tracker|analytics|pixel|stat)\.
+#General Tracking
