@@ -4,3 +4,15 @@
 #General Malware
 ^(.*\.)?(tracker|analytics|pixel|stat)\.
 #General Tracking
+^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]
+#Ad-Related subdomains
+^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]
+#ad servers
+^(.+[_.-])?telemetry[_.-]
+#telemetry
+^adim(age|g)s?[0-9]*[_.-]
+#ad images
+^adtrack(er|ing)?[0-9]*[_.-]
+#ad tracking
+^advert(s|is(ing|ements?))?[0-9]
+#general advertising terms
