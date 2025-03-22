@@ -1,0 +1,12 @@
+^r[0-9]+---sn-[a-z0-9]{8}\.googlevideo\.com$
+#This regex targets the video delivery domains used by YouTube
+^(.*\.)?googlevideo\.com$
+#A broader regex to catch all subdomains of googlevideo.com
+^(.*\.)?(doubleclick|googleadservices|googlesyndication|youtube-nocookie)\.com$
+#This regex blocks common ad-serving domains associated with YouTube
+^(.*\.)?youtube\.com\/(ads|ptracking|pagead|videogoodput)$
+#Targets specific ad-related paths on the youtube.com domain
+^(.*\.)?youtube\.com\/api\/stats\/ads$
+#Blocks the YouTube ad statistics API
+^(.*\.)?youtube\.com\/pagead\/
+#Blocks YouTube's pagead requests
