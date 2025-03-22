@@ -10,3 +10,6 @@
 #Blocks the YouTube ad statistics API
 ^(.*\.)?youtube\.com\/pagead\/
 #Blocks YouTube's pagead requests
+^r[0-9]+---sn-[a-z0-9]{8}\.googlevideo\.com$
+^(.*\.)?youtube\.com\/(ads|ptracking|pagead|videogoodput)$
+^(.*\.)?youtube\.com\/api\/stats\/ads$
